@@ -192,14 +192,14 @@ a:focus, a:hover, a:active {
 /***** Image Header - Partial Width ********************/
 
 .header-image #header #title-area {
-	background: url(images/logo.png) left top no-repeat;
+	background: url(images/acclaimpbs-logo.jpg) left top no-repeat;
 	}
 
 .header-image #title-area, .header-image #title-area #title, .header-image #title-area #title a {
 	display: block; 
 	float: left;
 	width: 320px;
-	height: 110px;
+	height: 163px;
 	margin: 0; 
 	padding: 0;
 	text-indent: -9999px;
@@ -1652,3 +1652,10 @@ img.wp-smiley, img.wp-wink {
 	margin: 0;
 	padding: 0;
 	}
+
+  /* custom */
+.post-photo {
+  float:left;
+  width:40%;
+  padding: 15px 10px 0 0;
+}

@@ -7,5 +7,6 @@ wp-config.php
 *[Tt]humbs.db
 *.Trashes
  
+wp-content/uploads/*.*
 # Include these files in previously blocked directories
 !wp-content/uploads/.htaccess

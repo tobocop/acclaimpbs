@@ -34,3 +34,13 @@ genesis_register_sidebar(array(
 	'description' => 'This is the bottom section of the homepage.',
 	'before_title'=>'<h4 class="widgettitle">','after_title'=>'</h4>'
 ));
+
+/** Add Post image above post title, single posts only */
+add_action( 'genesis_before_post_content', 'freelance_post_image' );
+function freelance_post_image() {
+	if ( is_category() ) return;
+	if ( $image = genesis_get_image( 'format=url&size=post-image' ) ) {
+		printf( '<a href="%s" rel="bookmark"><img class="post-photo" src="%s" alt="%s" /></a>', get_permalink(), $image, the_title_attribute( 'echo=0' ) );
+	}
+}
+
